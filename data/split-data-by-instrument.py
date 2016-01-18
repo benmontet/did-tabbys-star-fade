@@ -4,7 +4,7 @@ from astropy.time import Time
 
 
 def jd2year(jd):
-    return np.floor(Time(jd, format="jd").decimalyear)
+    return int(np.floor(Time(jd, format="jd").decimalyear))
 
 
 if __name__ == "__main__":
@@ -25,8 +25,8 @@ if __name__ == "__main__":
                         })
 
     summary_tbl = Table(summary)
-    summary_tbl.sort("datapoints")
-    summary_tbl.reverse()
     summary_tbl = join(summary_tbl, series_tbl,
                        keys="seriesId", join_type="left")
+    summary_tbl.sort("datapoints")
+    summary_tbl.reverse()
     summary_tbl["series", "seriesId", "datapoints", "year_begin", "year_end", "aperture", "telescope"].write("dasch-data-summary.csv", format="ascii.csv")
