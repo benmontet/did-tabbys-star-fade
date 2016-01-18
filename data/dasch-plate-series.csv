@@ -1,0 +1,80 @@
+seriesId,series,aperture,scale,telescope
+1,a,0.6,59.57,24-inch Bruce Doublet
+37,ab,0.0635,590,2.5-inch Ross Portrait Lens
+2,ac,0.038,606.4,1.5-inch Cooke Lenses
+38,acmisc,,,ac-b logbook. No plates.
+39,aco,0.0254,611.3,1 in Cook Lens #832 Series renamed from ac-a
+3,adh,0.76,68,32-36 inch BakerSchmidt 10 1/2 inch round Armagh-Dunsink-Harvard
+40,ai,0.038,1300,Patrol cameras
+41,ak,0.038,614.5,"1.5 in Cooke ""Long Focus"""
+4,al,0.038,1200,Cooke Short Focus
+5,am,0.038,610.8,"1-inch, 1.5-inch Cooke Lenses"
+42,an,,574,New Cooke Lens
+43,ax,0.076,695.7,3 inch Ross-Tessar Lens
+44,ay,0.066,694.2,2.6-inch Zeiss-Tessar
+79,ayroe,0.152,,Roe 6-inch
+6,b,0.2,179.4,"8-inch Bache Doublet, Voigtlander, reworked by Clark"
+45,bc,0.406,,16-inch Boller & Chivens
+46,bi,0.038,1200,1.5 inch Ross (short focus)
+7,bm,0.075,384,3-inch Ross
+47,bo,0.0635,800,"2.5 inch Voigtlander (Little Bache or ""Bachito"")"
+8,br,0.2,209,8-inch Brashear Lens
+9,c,0.3,84,11-inch Draper Refractor
+48,ca,0.0635,596,2.5 inch Cooke Lens
+10,d,,,Positives
+49,darnor,,890,Darlot Lens North
+50,darsou,,890,Darlot Lens South
+11,dnb,0.042,577.3,Damons North Blue
+12,dnr,0.042,579.7,Damons North Red
+13,dny,0.042,576.1,Damons North Yellow
+14,dsb,0.042,574.5,Damons South Blue
+15,dsr,0.042,579.7,Damons South Red
+16,dsy,0.042,581.8,Damons South Yellow
+51,ee,0.102,340,4-inch Voightlander Lens
+52,er,0.076,390,3-inch Elmer Ross
+17,fa,0.038,1200,1.5-inch Ross-Xpress
+18,h,0.6,60,24-inch Clark Reflector
+53,hsl,,,Henrietta Leavitt Logbooks. No plates.
+19,i,0.2,163.3,"8-inch Draper Doublet, Voigtlander Reworked by Clark"
+20,ir,0.2,164,8-inch Ross Lundin
+21,j,0.6,98,24-33 in Jewett Schmidt
+54,jdar,0.076,560,3-inch Darlot (Series renamed from j)
+56,m,0.127,,5-in Voightlander Transit Photometer
+22,ma,0.3,93.7,12-inch Metcalf Doublet
+23,mb,0.1,390,"4-inch Cooke (1-327), 6-inch (328-1776) 3-inch Ross Lundin (2388-2722)"
+24,mc,0.4,97.9,16-inch Metcalf Doublet (Refigured after 3500)
+25,md,0.1,193,4-inch Cooke Lens
+82,me,0.038,600,1.5-inch Cooke Lenses
+26,meteor,0.3,1200,
+27,mf,0.25,167.3,10-inch Metcalf Triplet
+55,misc,,,Logbook Only. Pages without plates.
+57,n,,,Transit Photometer
+58,nviews,,,Landscapes and views (Series renamed from n)
+60,o,,,Stellar
+59,oa,,,Stellar
+61,p,,,Eclipse Plates
+81,pz,0.076,,3 inch Perkin-Zeiss Lens
+64,q,,,Emulsion and Lens Tests
+62,qa,,,Emulsion and Lens Tests
+63,qb,,,Emulsion and Lens Tests
+29,r,0.075,390,3-inch Ross Fecker
+65,ra,,,Prints of Neg. Post (?) Enlargements
+30,rb,0.075,395.5,3-inch Ross Fecker
+31,rh,0.075,391.3,3-inch Ross Fecker
+32,rl,0.1,290,4-inch Ross Lundin
+66,ro,,390,
+67,rp,,,
+68,s,1.52,26.3,60 inch Common
+33,sb,1.5,26,60-inch Rockefeller Reflector
+34,sh,1.5,26,61-inch Wyeth Reflector
+77,solar,,,Solar (Series Discarded)
+69,sp,,,Spectrum SH Plates
+70,sq,,,SB Spectrum Plates
+71,t,,,Sky Photometer
+72,vq,,,Heinrich VQ (Spectrograph)
+74,w,,,Slit Spectrograph
+73,wa,,,Cooke Lens #11366 (Western Association)
+78,ww,,,Heinrich Camera Lens
+35,x,0.33,42.3,13-inch Boyden Refractor
+75,y,0.203,,8-inch Clark Doublet
+76,z,0.33,,13-inch Boyden Refractor (spectrum plates)
