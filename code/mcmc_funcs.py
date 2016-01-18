@@ -2,6 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import scipy.optimize as op
 import emcee
+import corner
 
 
 def lnlike(theta,  x,  y, yerr):
@@ -107,12 +108,65 @@ def mcmc(x, y, yerr, print_output=False,
 
     return sampler
 
+def plot_chains(sampler):
+    fig, axes = plt.subplots(3, 1, sharex=True, figsize=(8, 15))
+    axes[0].plot(sampler.chain[:, :, 0].T, color="k", alpha=0.4)
+    axes[0].set_ylabel("$m$")
+    axes[1].plot(sampler.chain[:, :, 1].T, color="k", alpha=0.4)
+    axes[1].set_ylabel("$b$")
+    axes[2].plot(np.exp(sampler.chain[:, :, 2]).T, color="k", alpha=0.4)
+    axes[2].set_ylabel("$f$")
+    axes[2].set_xlabel("step number")
+    for ax in axes:
+        ax.minorticks_on()
+        ax.grid()
+    fig.tight_layout(h_pad=0.0)
+    return fig
 
+
+def plot_corner(sampler, burnin=100, ndim=3):
+    samples = sampler.chain[:, burnin:, :].reshape((-1, ndim))
+    fig = corner.corner(samples, labels=["$m$", "$b$", "$\ln\,f$"], )
+    for ax in fig.axes:
+        ax.minorticks_on()
+        ax.grid()
+    return fig
+
+def plot_samples(sampler, data, sampsize=30000, burnin=100, ndim=3,
+        fill=True):
+    x, y, yerr = data
+    size = sampsize
+    samples = sampler.chain[:, burnin:, :].reshape((-1, ndim))
+    xval = np.arange(xmin, xmax, 1)
+    savearr = np.zeros([size, len(xval)])
+    for i, [m, b, lnf] in enumerate(samples[
+            np.random.randint(len(samples), size=size)]):
+        savearr[i] = m*xval+b
+
+    pc = np.percentile(savearr, [16, 50, 84], axis=0)
+
+    fig, ax1 = plt.subplots(1, 1, figsize=[8, 5])
+    if fill:
+        ax1.fill_between(xval, pc[0], pc[2], alpha=0.5)
+    else:
+        for m, b, lnf in samples[np.random.randint(len(samples), size=100)]:
+            ax1.plot(xl, m*xl+b, color="k", alpha=0.05)
+    ax1.errorbar(x, y, yerr=yerr, fmt=".k")
+    ax1.minorticks_on()
+    ax1.grid()
+    ax1.set_xlim(xmin, xmax)
+    ax1.set_ylim(ymin, ymax)
+    ax1.set_xlabel('Year')
+    ax1.set_ylabel('$B$ ')
+    ax1.text(xmax, 12.515, 'Figure by Tom Barclay / @mrtommyb',
+        fontsize=8, ha='right')
+    fig.tight_layout()
+    return fig
 
 # some constants
-xmin = 1880
-xmax = 1995
-ymin = 12.6
-ymax = 12.2
+xmin = 1882
+xmax = 1993
+ymin = 12.48
+ymax = 12.22
 xl = [xmin,xmax]
 
