@@ -1,20 +1,19 @@
-series,seriesId,datapoints,year_begin,year_end,aperture,telescope
-ac,2,614,1899,1952,0.038,1.5-inch Cooke Lenses
-rh,31,410,1928,1962,0.075,3-inch Ross Fecker
-dnb,11,300,1962,1989,0.042,Damons North Blue
-i,19,234,1889,1936,0.2,"8-inch Draper Doublet, Voigtlander Reworked by Clark"
-mc,24,111,1910,1951,0.4,16-inch Metcalf Doublet (Refigured after 3500)
-bm,7,54,1934,1940,0.075,3-inch Ross
-ay,44,44,1924,1927,0.066,2.6-inch Zeiss-Tessar
-md,25,42,1911,1940,0.1,4-inch Cooke Lens
-ca,48,15,1935,1936,0.0635,2.5 inch Cooke Lens
-ir,20,14,1935,1962,0.2,8-inch Ross Lundin
-a,1,10,1894,1906,0.6,24-inch Bruce Doublet
-mb,23,10,1929,1929,0.1,"4-inch Cooke (1-327), 6-inch (328-1776) 3-inch Ross Lundin (2388-2722)"
-dnr,12,9,1967,1978,0.042,Damons North Red
-ax,43,6,1923,1923,0.076,3 inch Ross-Tessar Lens
+series,seriesId,good_datapoints,year_begin,year_end,aperture,telescope
+ac,2,516,1899,1952,0.038,1.5-inch Cooke Lenses
+rh,31,326,1928,1962,0.075,3-inch Ross Fecker
+dnb,11,256,1962,1989,0.042,Damons North Blue
+i,19,171,1890,1936,0.2,"8-inch Draper Doublet, Voigtlander Reworked by Clark"
+mc,24,97,1910,1951,0.4,16-inch Metcalf Doublet (Refigured after 3500)
+bm,7,50,1934,1940,0.075,3-inch Ross
+md,25,39,1911,1940,0.1,4-inch Cooke Lens
+ay,44,32,1924,1927,0.066,2.6-inch Zeiss-Tessar
+ir,20,13,1935,1962,0.2,8-inch Ross Lundin
+ca,48,12,1935,1936,0.0635,2.5 inch Cooke Lens
+mb,23,9,1929,1929,0.1,"4-inch Cooke (1-327), 6-inch (328-1776) 3-inch Ross Lundin (2388-2722)"
+dnr,12,7,1967,1978,0.042,Damons North Red
+a,1,6,1894,1906,0.6,24-inch Bruce Doublet
 dny,13,6,1962,1969,0.042,Damons North Yellow
-am,5,2,1903,1904,0.038,"1-inch, 1.5-inch Cooke Lenses"
+ax,43,3,1923,1923,0.076,3 inch Ross-Tessar Lens
 me,82,2,1911,1911,0.038,1.5-inch Cooke Lenses
 mf,27,1,1917,1917,0.25,10-inch Metcalf Triplet
-ma,22,1,1907,1907,0.3,12-inch Metcalf Doublet
+am,5,1,1903,1903,0.038,"1-inch, 1.5-inch Cooke Lenses"
