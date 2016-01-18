@@ -14,7 +14,7 @@ def lnlike(theta,  x,  y, yerr):
 
 def lnprior(theta):
     m, b, lnf = theta
-    if -1. < m < 1. and 0.0 < b < 1000.0 and -10.0 < lnf < 10.0:
+    if -1. < m < 1. and -1.E3 < b < 1.E4 and -10.0 < lnf < 10.0:
         return 0.0
     return -np.inf
 
@@ -85,9 +85,11 @@ def mcmc(x, y, yerr, print_output=False,
          burnin=100):
 
     m_ml, b_ml, lnf_ml = maxlike(x, y, yerr, print_output=False)
+    if not np.isfinite(lnprob([m_ml, b_ml, lnf_ml], x, y, yerr)):
+        m_ml, b_ml, lnf_ml = 0.0016, 9.25, np.log(0.0013)
 
     pos = [np.array([m_ml, b_ml, lnf_ml]) +
-        1e-4*np.random.randn(ndim) for i in range(nwalkers)]
+        1e-3*np.random.randn(ndim) for i in range(nwalkers)]
 
     sampler = emcee.EnsembleSampler(
         nwalkers, ndim, lnprob, args=(x, y, yerr))
@@ -107,6 +109,7 @@ def mcmc(x, y, yerr, print_output=False,
             """.format(m_mcmc, b_mcmc, f_mcmc))
 
     return sampler
+
 
 def plot_chains(sampler):
     fig, axes = plt.subplots(3, 1, sharex=True, figsize=(8, 15))
