@@ -133,7 +133,7 @@ def plot_corner(sampler, burnin=100, ndim=3):
     return fig
 
 def plot_samples(sampler, data, sampsize=30000, burnin=100, ndim=3,
-        fill=True):
+        fill=True,):
     x, y, yerr = data
     size = sampsize
     samples = sampler.chain[:, burnin:, :].reshape((-1, ndim))
@@ -150,7 +150,7 @@ def plot_samples(sampler, data, sampsize=30000, burnin=100, ndim=3,
         ax1.fill_between(xval, pc[0], pc[2], alpha=0.5)
     else:
         for m, b, lnf in samples[np.random.randint(len(samples), size=100)]:
-            ax1.plot(xl, m*xl+b, color="k", alpha=0.05)
+            ax1.plot(xval, m*xval+b, color="k", alpha=0.05)
     ax1.errorbar(x, y, yerr=yerr, fmt=".k")
     ax1.minorticks_on()
     ax1.grid()
@@ -158,8 +158,8 @@ def plot_samples(sampler, data, sampsize=30000, burnin=100, ndim=3,
     ax1.set_ylim(ymin, ymax)
     ax1.set_xlabel('Year')
     ax1.set_ylabel('$B$ ')
-    ax1.text(xmax, 12.515, 'Figure by Tom Barclay / @mrtommyb',
-        fontsize=8, ha='right')
+    #ax1.text(xmax, 12.515, 'Figure by Tom Barclay / @mrtommyb',
+    #    fontsize=8, ha='right')
     fig.tight_layout()
     return fig
 
