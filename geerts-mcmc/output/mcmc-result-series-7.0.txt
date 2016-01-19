@@ -1,0 +1,17 @@
+Results for series-7.0
+=====================
+Data points: 46
+Period: 1934.2 - 1940.8
+MCMC samples: 18000
+
+Mean and standard deviation of the posterior parameters:
+m = 0.00031 +/- 0.00807
+b = 11.734 +/- 15.643
+
+i.e. the star changed by:
+0.031 +/_ 0.807 mag/century
+= 0.03 +/_ 0.81 mag/century
+
+P(slope > 0): 51.6%
+P(slope < 0): 48.4%
+P(slope < 0.0005): 51.1%

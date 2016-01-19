@@ -1,0 +1,17 @@
+Results for series-2.0
+=====================
+Data points: 408
+Period: 1899.5 - 1952.7
+MCMC samples: 18000
+
+Mean and standard deviation of the posterior parameters:
+m = -0.00023 +/- 0.00058
+b = 12.821 +/- 1.131
+
+i.e. the star changed by:
+-0.023 +/_ 0.058 mag/century
+= -0.02 +/_ 0.06 mag/century
+
+P(slope > 0): 34.0%
+P(slope < 0): 66.0%
+P(slope < 0.0005): 89.2%

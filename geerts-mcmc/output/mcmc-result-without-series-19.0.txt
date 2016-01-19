@@ -1,0 +1,17 @@
+Results for without-series-19.0
+=====================
+Data points: 1184
+Period: 1894.6 - 1989.9
+MCMC samples: 18000
+
+Mean and standard deviation of the posterior parameters:
+m = 0.00159 +/- 0.00025
+b = 9.274 +/- 0.477
+
+i.e. the star changed by:
+0.159 +/_ 0.025 mag/century
+= 0.16 +/_ 0.02 mag/century
+
+P(slope > 0): 100.0%
+P(slope < 0): 0.0%
+P(slope < 0.0005): 1.3%

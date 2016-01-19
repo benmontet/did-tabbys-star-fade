@@ -1,0 +1,44 @@
+interactive  : False
+
+font.size: 20
+font.family: serif
+font.serif: Computer Sans
+
+text.usetex: True
+text.color  : 000000
+text.latex.unicode : True
+
+
+figure.figsize   : 3.5, 2.5  # figure size in inches
+figure.dpi       : 300
+
+axes.facecolor      : ffffff
+axes.edgecolor      : 333333
+axes.linewidth      : 1
+axes.grid           : False
+axes.labelsize      : 11
+axes.labelweight    : normal
+axes.labelcolor     : 000000
+
+#axes.formatter.limits : -7, 7 # use scientific notation if log10
+                               # of the axis range is smaller than the
+                               # first or larger than the second
+axes.unicode_minus  : True
+
+xtick.major.size     : 6      # major tick size in points
+xtick.minor.size     : 3      # minor tick size in points
+xtick.major.pad      : 5      # distance to major tick label in points
+xtick.minor.pad      : 5      # distance to the minor tick label in points
+xtick.color          : 000000      # color of the tick labels
+xtick.labelsize      : 9 # fontsize of the tick labels
+xtick.direction      : in
+
+ytick.major.size     : 6      # major tick size in points
+ytick.minor.size     : 3      # minor tick size in points
+ytick.major.pad      : 5      # distance to major tick label in points
+ytick.minor.pad      : 5      # distance to the minor tick label in points
+ytick.color          : 000000      # color of the tick labels
+ytick.labelsize      : 9 # fontsize of the tick labels
+ytick.direction      : in
+
+legend.fontsize : 8
