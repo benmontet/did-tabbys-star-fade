@@ -134,7 +134,7 @@ def lightcurve_plot(x, y, yerr, samples_m, samples_b, output_fn="plot.png"):
 
 
 if __name__ == "__main__":
-    df = pd.read_csv("../preprocessed-data.csv")
+    df = pd.read_csv("../data/preprocessed-data.csv")
 
     #run_analysis(df, name="all")
 
