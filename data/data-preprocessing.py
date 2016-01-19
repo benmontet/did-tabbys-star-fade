@@ -27,6 +27,9 @@ if __name__ == "__main__":
     summary = []
     dataframes = []
     for seriesid in series_ids:
+        if seriesid in [12, 13]:
+            print("Ignoring {}".format(seriesid))
+            continue  # 12 & 13 are red and yellow!!
         # AFLAGS are described here:
         # http://dasch.rc.fas.harvard.edu/database.php#AFLAGS_ext
         # Schaefer rejects data points with AFLAGS > 9000
